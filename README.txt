@@ -1,4 +1,4 @@
-= Parameters
+= libelf-ffi
 
 * http://github.com/postmodern/libelf-ffi/
 * Postmodern (postmodern.mod3 at gmail.com)
