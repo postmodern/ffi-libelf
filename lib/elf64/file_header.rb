@@ -5,7 +5,7 @@ module FFI
   module Elf64
     class FileHeader < Elf::FileHeader
 
-      layout :e_ident, :char_array,
+      layout :e_ident, [:uchar, Elf::EI_NIDENT],
              :e_type, :elf64_half,
              :e_machine, :elf64_half,
              :e_version, :elf64_word,

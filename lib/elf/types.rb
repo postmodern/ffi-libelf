@@ -4,6 +4,8 @@ module FFI
   module Elf
     extend FFI::Library
 
+    EI_NIDENT = 16
+
     #
     # Identification values for recognized object files.
     #
