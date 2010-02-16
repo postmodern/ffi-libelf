@@ -1,25 +1,6 @@
-= libelf-ffi
+(The MIT License)
 
-* http://github.com/postmodern/libelf-ffi/
-* Postmodern (postmodern.mod3 at gmail.com)
-
-== DESCRIPTION:
-
-Ruby FFI bindings for libelf.
-
-== FEATURES:
-
-== EXAMPLES:
-
-== INSTALL:
-
-  $ sudo gem install libelf-ffi
-
-== LICENSE:
-
-The MIT License
-
-Copyright (c) 2009 Hal Brodigan
+Copyright (c) 2009-2010 Hal Brodigan
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
