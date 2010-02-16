@@ -1,8 +1,9 @@
-require 'ffi/struct'
+require 'ffi'
 
 module FFI
   module Elf
     class NoteHeader < FFI::Struct
+
       # Known names of notes
       NOTES = {
         :solaris => "SUNW Solaris",

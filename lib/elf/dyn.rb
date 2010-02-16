@@ -1,4 +1,4 @@
-require 'ffi/struct'
+require 'ffi'
 
 module FFI
   module Elf

@@ -6,7 +6,7 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = 'ffi-libelf'
-    gem.version = FFI::ELF::VERSION
+    gem.version = FFI::Elf::VERSION
     gem.summary = %Q{FFI bindings to libelf.}
     gem.description = %Q{Ruby FFI bindings for libelf.}
     gem.email = 'postmodern.mod3@gmail.com'
