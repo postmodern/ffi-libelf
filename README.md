@@ -3,19 +3,19 @@
 * http://github.com/postmodern/ffi-libelf/
 * Postmodern (postmodern.mod3 at gmail.com)
 
-## DESCRIPTION:
+## Description
 
 Ruby FFI bindings for libelf.
 
-## FEATURES:
+## Features
 
-## EXAMPLES:
+## Examples
 
-## INSTALL:
+## Install
 
     $ sudo gem install libelf-ffi
 
-## LICENSE:
+## License
 
 See {file:LICENSE.txt} for license information.
 
