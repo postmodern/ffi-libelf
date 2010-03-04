@@ -11,6 +11,10 @@ Ruby FFI bindings for libelf.
 
 ## Examples
 
+## Requirements
+
+* elfutils (for libelf.so)
+
 ## Install
 
     $ sudo gem install libelf-ffi
