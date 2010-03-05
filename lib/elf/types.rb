@@ -16,7 +16,7 @@ module FFI
     ]
 
     # Known translation types.
-    DATA_TYPES = enum [
+    TYPES = enum [
       :byte,                # unsigned char
       :addr,                # Elf32_Addr, Elf64_Addr, ...
       :dyn,                 # Dynamic section record.
