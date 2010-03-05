@@ -1,4 +1,4 @@
-require 'elf/64/types'
+require 'elf64/types'
 require 'elf/move'
 
 module FFI

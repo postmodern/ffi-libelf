@@ -1,4 +1,4 @@
-require 'elf/32/types'
+require 'elf32/types'
 require 'elf/ver_def_aux'
 
 module FFI
