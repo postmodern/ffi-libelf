@@ -18,7 +18,7 @@ module FFI
       #
       # Reads in the section header.
       #
-      # @return [GElf::SectionHeader]
+      # @return [Elf32::SectionHeader, Elf64::SectionHeader]
       #   The section header.
       #
       def header
