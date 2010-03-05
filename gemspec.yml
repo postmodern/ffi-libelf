@@ -1,0 +1,16 @@
+name: ffi-libelf
+summary: FFI bindings to libelf.
+description: Ruby FFI bindings for libelf.
+license: MIT
+homepage: http://github.com/postmodern/ffi-libelf
+authors: Postmodern
+email: postmodern.mod3@gmail.com
+has_yard: true
+
+dependencies:
+  ffi: ~> 1.0
+
+development_dependencies:
+  rubygems-tasks: ~> 0.1
+  rspec: ~> 2.4
+  yard: ~> 0.6

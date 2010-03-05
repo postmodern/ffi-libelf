@@ -2,8 +2,8 @@ require 'elf/version'
 
 require 'spec_helper'
 
-describe ELF do
+describe Elf do
   it "should define a VERSION constant" do
-    ELF.should be_const_defined('VERSION')
+    described_class.should be_const_defined('VERSION')
   end
 end

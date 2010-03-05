@@ -1,42 +1,36 @@
 require 'rubygems'
 require 'rake'
-require './lib/elf/version.rb'
 
 begin
-  require 'jeweler'
-  Jeweler::Tasks.new do |gem|
-    gem.name = 'ffi-libelf'
-    gem.version = FFI::Elf::VERSION
-    gem.summary = %Q{FFI bindings to libelf.}
-    gem.description = %Q{Ruby FFI bindings for libelf.}
-    gem.email = 'postmodern.mod3@gmail.com'
-    gem.homepage = 'http://github.com/postmodern/ffi-libelf'
-    gem.authors = ['Postmodern']
-    gem.add_dependency 'ffi', '>= 0.6.0'
-    gem.add_development_dependency 'rspec', '>= 1.3.0'
-    gem.add_development_dependency 'yard', '>= 0.5.3'
-    gem.has_rdoc = 'yard'
+  gem 'rubygems-tasks', '~> 0.1'
+  require 'rubygems/tasks'
+
+  Gem::Tasks.new
+rescue LoadError => e
+  warn e.message
+  warn "Run `gem install rubygems-tasks` to install 'rubygems/tasks'."
+end
+
+begin
+  gem 'rspec', '~> 2.4'
+  require 'rspec/core/rake_task'
+
+  RSpec::Core::RakeTask.new
+rescue LoadError => e
+  task :spec do
+    abort "Please run `gem install rspec` to install RSpec."
   end
-rescue LoadError
-  puts "Jeweler (or a dependency) not available. Install it with: gem install jeweler"
 end
-
-require 'spec/rake/spectask'
-Spec::Rake::SpecTask.new(:spec) do |spec|
-  spec.libs += ['lib', 'spec']
-  spec.spec_files = FileList['spec/**/*_spec.rb']
-  spec.spec_opts = ['--options', '.specopts']
-end
-
-task :spec => :check_dependencies
+task :test => :spec
 task :default => :spec
 
 begin
+  gem 'yard', '~> 0.6'
   require 'yard'
 
-  YARD::Rake::YardocTask.new
-rescue LoadError
+  YARD::Rake::YardocTask.new  
+rescue LoadError => e
   task :yard do
-    abort "YARD is not available. In order to run yard, you must: gem install yard"
+    abort "Please run `gem install yard` to install YARD."
   end
 end
