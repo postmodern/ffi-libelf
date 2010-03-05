@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Postmodern"]
-  s.date = %q{2010-02-16}
+  s.date = %q{2010-03-04}
   s.description = %q{Ruby FFI bindings for libelf.}
   s.email = %q{postmodern.mod3@gmail.com}
   s.extra_rdoc_files = [
@@ -34,6 +34,7 @@ Gem::Specification.new do |s|
     "lib/elf/dyn.rb",
     "lib/elf/ffi.rb",
     "lib/elf/file_header.rb",
+    "lib/elf/handler.rb",
     "lib/elf/lib.rb",
     "lib/elf/m64k.rb",
     "lib/elf/move.rb",
@@ -89,6 +90,10 @@ Gem::Specification.new do |s|
     "lib/elf64/ver_def_aux.rb",
     "lib/elf64/ver_need.rb",
     "lib/elf64/ver_need_aux.rb",
+    "lib/gelf.rb",
+    "lib/gelf/ffi.rb",
+    "lib/gelf/gelf.rb",
+    "lib/gelf/types.rb",
     "spec/libelf_spec.rb",
     "spec/spec_helper.rb"
   ]
@@ -96,7 +101,7 @@ Gem::Specification.new do |s|
   s.homepage = %q{http://github.com/postmodern/ffi-libelf}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.3.5}
+  s.rubygems_version = %q{1.3.6}
   s.summary = %q{FFI bindings to libelf.}
   s.test_files = [
     "spec/spec_helper.rb",
