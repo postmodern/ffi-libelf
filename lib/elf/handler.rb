@@ -1,5 +1,6 @@
 require 'elf/types'
 require 'elf/ffi'
+require 'elf/section'
 
 module FFI
   module Elf
@@ -33,13 +34,14 @@ module FFI
       #
       # Iterates over the sections in the Elf file.
       #
-      # @yield [pointer]
+      # @yield [section]
       #   The given block will be passed the pointers to each section header.
       #
-      # @yieldparam [FFI::Pointer] pointer
+      # @yieldparam [Elf::Section] section
       #   The section pointer.
       #
       # @return [Handler]
+      #   The elf handler.
       #
       def each_section(&block)
         loop do
@@ -49,7 +51,7 @@ module FFI
             @current_section = nil
             break
           else
-            block.call(@current_section) if block
+            block.call(Section.new(@current_section)) if block
           end
         end
 
