@@ -42,6 +42,7 @@ Gem::Specification.new do |s|
     "lib/elf/program_header.rb",
     "lib/elf/rel.rb",
     "lib/elf/rel_addend.rb",
+    "lib/elf/section.rb",
     "lib/elf/section_header.rb",
     "lib/elf/sym.rb",
     "lib/elf/sym_info.rb",
