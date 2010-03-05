@@ -74,7 +74,7 @@ module FFI
 
     KINDS = enum_type(:elf_kind)
     TYPES = enum_type(:elf_type)
-    CMDS = enum_type(:elf_cmds)
+    COMMANDS = enum_type(:elf_cmds)
 
     typedef :ulong, :time_t
     typedef :uint, :size_t
