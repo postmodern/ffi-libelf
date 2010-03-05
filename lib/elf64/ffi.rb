@@ -6,7 +6,7 @@ module FFI
   module Elf64
     extend FFI::Library
 
-    ffi_lib 'libelf'
+    ffi_lib 'elf'
 
     attach_function :elf64_getehdr, [:pointer], :pointer
     attach_function :elf64_newehdr, [:pointer], :pointer

@@ -6,7 +6,7 @@ module FFI
   module Elf32
     extend FFI::Library
 
-    ffi_lib 'libelf'
+    ffi_lib 'elf'
 
     attach_function :elf32_getehdr, [:pointer], :pointer
     attach_function :elf32_newehdr, [:pointer], :pointer
