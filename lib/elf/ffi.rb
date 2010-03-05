@@ -9,7 +9,7 @@ module FFI
   module Elf
     extend FFI::Library
 
-    ffi_lib 'libelf'
+    ffi_lib 'elf'
 
     attach_function :elf_begin, [:int, :int, :pointer], :pointer
     attach_function :elf_clone, [:pointer, :int], :pointer
