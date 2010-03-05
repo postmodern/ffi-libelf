@@ -7,7 +7,7 @@ module FFI
     EI_NIDENT = 16
 
     # Identification values for recognized object files.
-    FILE_TYPES = enum [
+    enum :elf_kind, [
       :none,			# Unknown.
       :archive,	  # Archive.
       :coff,			# Stupid old COFF.
@@ -16,7 +16,7 @@ module FFI
     ]
 
     # Known translation types.
-    TYPES = enum [
+    enum :elf_type, [
       :byte,                # unsigned char
       :addr,                # Elf32_Addr, Elf64_Addr, ...
       :dyn,                 # Dynamic section record.
@@ -50,7 +50,7 @@ module FFI
     PERMISSIVE = 0x8
 
     # Commands.
-    COMMANDS = enum [
+    enum :elf_cmd, [
       :null,			# Nothing, terminate, or compute only.
       :read,			# Read ..
       :write,			# Read and write ..
