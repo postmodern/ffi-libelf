@@ -32,6 +32,23 @@ module FFI
       end
 
       #
+      # Gets the next section descriptor.
+      #
+      # @return [Elf::Section, nil]
+      #   The next section descriptor, or `nil` if there are no more.
+      #
+      def next_section
+        @current_section = Elf.elf_nextscn(self,@current_section)
+
+        if @current_section.null?
+          @current_section = nil
+          return nil
+        else
+          return Section.new(@current_section)
+        end
+      end
+
+      #
       # Iterates over the sections in the Elf file.
       #
       # @yield [section]
@@ -44,15 +61,8 @@ module FFI
       #   The elf handler.
       #
       def each_section(&block)
-        loop do
-          @current_section = Elf.elf_nextscn(self,@current_section)
-
-          if @current_section.null?
-            @current_section = nil
-            break
-          else
-            block.call(Section.new(@current_section)) if block
-          end
+        while (section = next_section)
+          block.call(section) if block
         end
 
         return self
