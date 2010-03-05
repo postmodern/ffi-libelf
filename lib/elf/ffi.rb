@@ -24,7 +24,6 @@ module FFI
     attach_function :elf_ndxscn, [:pointer], :size_t
     attach_function :elf_nextscn, [:pointer, :pointer], :pointer
     attach_function :elf_newscn, [:pointer], :pointer
-    attach_function :elf_scnshndx, [:pointer], :int
     attach_function :elf_getshnum, [:pointer, :pointer], :int
     attach_function :elf_getshstrndx, [:pointer, :pointer], :int
     attach_function :elf_flagelf, [:pointer, :int, :uint], :uint
