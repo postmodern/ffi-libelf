@@ -72,6 +72,10 @@ module FFI
       :num
     ]
 
+    KINDS = enum_type(:elf_kind)
+    TYPES = enum_type(:elf_type)
+    CMDS = enum_type(:elf_cmds)
+
     typedef :ulong, :time_t
     typedef :uint, :size_t
     typedef :int64, :loff_t
