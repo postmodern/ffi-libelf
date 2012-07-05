@@ -1,3 +1,5 @@
+require 'ffi/elf'
+
 module FFI
   module GElf
     case FFI::Platform::ADDRESS_SIZE
@@ -8,7 +10,6 @@ module FFI
       Dyn           = Elf64::Dyn
       FileHeader    = Elf64::FileHeader
       Lib           = Elf64::Lib
-      M68K          = Elf64::M68K
       Move          = Elf64::Move
       NoteHeader    = Elf64::NoteHeader
       ProgramHeader = Elf64::ProgramHeader

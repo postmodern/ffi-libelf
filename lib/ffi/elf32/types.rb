@@ -1,4 +1,4 @@
-require 'ffi/elf/types'
+require 'ffi'
 
 module FFI
   module Elf32
