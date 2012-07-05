@@ -29,7 +29,6 @@ module FFI
       Dyn           = Elf32::Dyn
       FileHeader    = Elf32::FileHeader
       Lib           = Elf32::Lib
-      M68K          = Elf32::M68K
       Move          = Elf32::Move
       NoteHeader    = Elf32::NoteHeader
       ProgramHeader = Elf32::ProgramHeader
