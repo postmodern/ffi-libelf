@@ -28,7 +28,7 @@ module FFI
       #   The new Elf handler.
       #
       def self.open(file)
-        self.new(Elf.elf_begin(file.to_i,COMMAND[:read],nil))
+        self.new(Elf.elf_begin(file.fileno,COMMAND[:read],nil))
       end
 
       #
