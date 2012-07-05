@@ -2,7 +2,7 @@ name: ffi-libelf
 summary: FFI bindings to libelf.
 description: Ruby FFI bindings for libelf.
 license: MIT
-homepage: http://github.com/postmodern/ffi-libelf
+homepage: https://github.com/postmodern/ffi-libelf
 authors: Postmodern
 email: postmodern.mod3@gmail.com
 has_yard: true

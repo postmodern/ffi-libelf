@@ -1,23 +1,23 @@
 # ffi-libelf
 
-* http://github.com/postmodern/ffi-libelf/
-* Postmodern (postmodern.mod3 at gmail.com)
+* [Source](https://github.com/postmodern/ffi-libelf)
+* [Issues](https://github.com/postmodern/ffi-libelf/issues)
+* [Email](mailto:postmodern.mod3 at gmail.com)
 
 ## Description
 
-Ruby FFI bindings for libelf.
-
-## Features
+Ruby FFI bindings for [libelf](http://directory.fsf.org/wiki/Libelf).
 
 ## Examples
 
 ## Requirements
 
-* elfutils (for libelf.so)
+* [elfutils](https://fedorahosted.org/elfutils/) (for `libelf.so`)
+* [ffi](https://github.com/ffi/ffi#readme) ~> 1.0
 
 ## Install
 
-    $ sudo gem install libelf-ffi
+    $ gem install ffi-libelf
 
 ## License
 
