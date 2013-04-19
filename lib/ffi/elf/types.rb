@@ -53,7 +53,7 @@ module FFI
     COMMAND = enum :elf_cmd, [
       :null,			# Nothing, terminate, or compute only.
       :read,			# Read ..
-      :write,			# Read and write ..
+      :readwrite, # Read and write ..
       :write,     # Write ..
       :clr,			  # Clear flag.
       :set,			  # Set flag.
